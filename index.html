@@ -13,10 +13,10 @@
 </head>
 
 <body>
-  
+
     <section class="intro-container">
         <div class="intro">
-                <audio id="audio-intro" preload src="media/audio-1.mp3"></audio>
+            <audio id="audio-intro" preload src="media/audio-1.mp3"></audio>
             <div class="intro-img intro-img-idle animate">
                 <svg viewBox="0 -19 512.00028 512">
                     <path d="m402.238281 333.300781c-5.328125-1.429687-10.800781 1.726563-12.230469 7.0625-1.429687 5.324219 1.730469 10.808594 7.0625 12.238281 5.328126 1.429688 10.8125-1.738281 12.242188-7.0625 1.425781-5.335937-1.738281-10.808593-7.074219-12.238281zm0 0"
@@ -37,7 +37,7 @@
         </div>
     </section>
     <div class="slides-container">
-        <section class="slide blur">
+        <section class="slide blur" id="slide">
             <div class="fullscreen_video_bg">
                 <video loop muted autoplay class="video_bg">
                     <source src="media/video_intro.mp4" type="video/mp4">
@@ -47,106 +47,218 @@
                 <h1>I am AI</h1>
                 <p>A inteligência artificial e o seu impacto na música
                 </p>
-                <div class="cover-cta">
-                    <div class="cover-cta-img">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-                            <g>
-                                <path fill="#FFFFFF" d="M481.4,137.3c-6.4-6.4-16.7-6.4-23,0L256,340.1L53.2,137.3c-6.4-6.4-16.7-6.4-23,0c-6.4,6.4-6.4,16.7,0,23
+                <a href="#isthisai">
+                    <div class="cover-cta" id="anchor-slide">
+                        <div class="cover-cta-img">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                                <g>
+                                    <path fill="#FFFFFF" d="M481.4,137.3c-6.4-6.4-16.7-6.4-23,0L256,340.1L53.2,137.3c-6.4-6.4-16.7-6.4-23,0c-6.4,6.4-6.4,16.7,0,23
                                 l213.9,213.9c3.2,3.2,7.1,4.8,11.5,4.8c4,0,8.3-1.6,11.5-4.8L481,160.3C487.8,154,487.8,143.7,481.4,137.3L481.4,137.3z" />
-                            </g>
-                        </svg>
-
+                                </g>
+                            </svg>
+                        </div>
                     </div>
+                </a>
+            </div>
+    </section>
+    <section class="slide isthisai" id="isthisai" style="background-color: black">
+        <img src="media/isthisai-p-2.png" id="isthisai_parallax_1" />
+        <img src="media/isthisai-p-1.png" id="isthisai_parallax_2" />
+        <img src="media/isthisai-p-3.png" id="isthisai_parallax_3" />
+        <div class="slide-txt" id="isthisai_parallax_4">
+            <h2>Is This AI?</h2>
+            <p>E se eu te disser que a música que estás a ouvir foi feita inteiramente por uma IA?
+            </p>
+            <a href="#brief-history"><button class="button-yes">saber mais?</button></a>
+        </div>
+
+    </section>
+    <section class="slide brief-history" id="brief-history" style="background-color: grey">
+        <div class="slide-txt">
+            <h2>Breve história da inteligência artificial na música </h2>
+        </div>
+        <section id="timeline" class="timeline-container">
+            <!--inicio timeline-block-->
+            <div class="timeline-block">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <!--inicio timeline-content-->
+                    <h3>Primeiro estudo</h3>
+                    <p>Em 1960 foi escrita a primeira dissertação por R. Kh. Zaripov sobre música composta por
+                        algoritmos utilizando o Ural-1, um computador mainframe
+                    </p>
+                    <span class="timeline-date">1960</span>
                 </div>
+                <!--fim timeline-content-->
             </div>
+            <!--fim timeline-block-->
+            <!--inicio timeline-block-->
+            <div class="timeline-block">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <!--inicio timeline-content-->
+                    <h3>Primeira partitura de piano criada por uma IA</h3>
+                    <p>Em 1965 foi criada a primeira partitura de piano criado por um computador que era capaz de
+                        reconhecer padrões em várias músicas. por Ray Kurzweil
 
-        </section>
-        <section class="slide isthisai">
-            <div class="slide-txt">
-                <h2>Is This AI?</h2>
-                <p>Será que a música que estás a ouvir foi feita com recurso a inteligência artificial?
-                </p>
-                <div class="button-wrapper">
-                    <button class="button-yes">sim</button>
-                    <button class="button-no">não</button>
-                    <button class="button-maybe">talvez?</button>
+                    </p>
+                    <span class="timeline-date">1965</span>
                 </div>
+                <!--fim timeline-content-->
             </div>
+            <!--fim timeline-block-->
+            <!--inicio timeline-block-->
+            <div class="timeline-block">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <!--inicio timeline-content-->
+                    <h3>The Verbaziser</h3>
+                    <p>David Bowie cria o Verbasizer, uma aplicação para Mac que é baseada na técnica de corte.
 
-        </section>
-        <section class="slide isthisai">
-            <div class="slide-txt">
-                <h2>Breve história da inteligência artificial na música  </h2>
+                    </p>
 
-                    
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/x3IKLMgFaDA" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <span class="timeline-date">1995</span>
+                </div>
+                <!--fim timeline-content-->
             </div>
+            <!--fim timeline-block-->
+            <!--inicio timeline-block-->
+            <div class="timeline-block">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <!--inicio timeline-content-->
+                    <h3>Landr</h3>
+                    <p>- É fundada a Landr, um serviço de masterização (mistura final) de música online com base
+                        numa
+                        inteligência artificial. A empresa também distribui as músicas que masteriza.
 
+                    </p>
+                    <span class="timeline-date">2012</span>
+                </div>
+                <!--fim timeline-content-->
+            </div>
+            <!--fim timeline-block-->
+            <!--inicio timeline-block-->
+            <div class="timeline-block">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <!--inicio timeline-content-->
+                    <h3>Spotify</h3>
+                    <p>Torna-se público que o Spotify usa e está a desenvolver uma inteligência artifical que entre
+                        muitas coisas, recomenda músicas semelhantes ao utilizador
+
+
+                    </p>
+                    <span class="timeline-date">2013</span>
+                </div>
+                <!--fim timeline-content-->
+            </div>
+            <!--fim timeline-block-->
+            <!--inicio timeline-block-->
+            <div class="timeline-block">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <!--inicio timeline-content-->
+                    <h3>Amper Music</h3>
+                    <p> É fundada a Amper Music, uma startup que desenvolveu uma plataforma que compõe, produz e
+                        executa músicas inteiramente criadas através de inteligência
+                        artificial. Viria a co-produzir o primeiro álbum criado na íntegra com AI em 2018, com
+                        Taryn
+                        Southern
+
+                    </p>
+                    <span class="timeline-date">2014</span>
+                </div>
+                <!--fim timeline-content-->
+            </div>
+            <!--fim timeline-block-->
+            <!--inicio timeline-block-->
+            <div class="timeline-block">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <!--inicio timeline-content-->
+                    <h3>Google Brain (e Google Magenta)</h3>
+                    <p>A Google integra o seu projeto de inteligência artifical no Youtube, na altura intitulado de
+                        Google Brain, passando este a sugerir conteúdos, nomeadamente música, a partir de
+                        correlações
+                        estabelecidas pela AI. Não foi a primeira tentativa de conteúdos filtrados por AI mas é a
+                        que
+                        se mantém até hoje.
+
+
+                    </p>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/6ZLB2-_0Hxw" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <span class="timeline-date">2015</span>
+                </div>
+                <!--fim timeline-content-->
+            </div>
+            <!--fim timeline-block-->
+            <!--inicio timeline-block-->
+            <div class="timeline-block">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <!--inicio timeline-content-->
+                    <h3>Daddy's Car</h3>
+                    <p>A Sony em combinação com uma Flow Machines compôs a primeira música com Inteligência
+                        Artificial no estilo de Beatles, intitulada de “Daddy’s Car”. Mais tarde
+                        veio a ser lançada.
+
+                    </p>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/cTP0Sr_ehmY" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <span class="timeline-date">2016</span>
+                </div>
+                <!--fim timeline-content-->
+            </div>
+            <!--fim timeline-block-->
+            <!--inicio timeline-block-->
+            <div class="timeline-block">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <!--inicio timeline-content-->
+                    <h3>Streamerium</h3>
+                    <p>Surge a Streamerium, uma plataforma que monetiza conteúdos, nomeadamente música, a partir de
+                        uma
+                        Inteligência Artificial e algoritmos de Machine Learning
+                    </p>
+                    <span class="timeline-date">2016</span>
+                </div>
+                <!--fim timeline-content-->
+            </div>
+            <!--fim timeline-block-->
+            <!--inicio timeline-block-->
+            <div class="timeline-block">
+                <div class="timeline-img"></div>
+                <div class="timeline-content">
+                    <!--inicio timeline-content-->
+                    <h3>Hello World</h3>
+                    <p>Taryn Southern é a primeira artista a lançar um álbum composto e produzido com a ajuda de
+                        Inteligência Artificial, entitulado de AI, em co-produção com a Amper Music
+                    </p>
+                    <p>
+                        O primeiro álbum “robótico” é produzido com a Flow Machines em conjunto com vários
+                        artistas, entitulado de "Hello World".
+
+                    </p>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/MG7YvFqD4zc" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <span class="timeline-date">2018</span>
+                </div>
+                <!--fim timeline-content-->
+            </div>
+            <!--fim timeline-block-->
         </section>
+    </section>
 
-	<section id="timeline" class="timeline-container">
-		<div class="timeline-block">
-			<div class="timeline-img"></div>
 
-			<div class="timeline-content">
-				<h2>Welcome</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<span class="timeline-date">Jan 14</span>
-			</div> <!-- timeline-content -->
-		</div> <!-- timeline-block -->
-
-		<div class="timeline-block">
-			<div class="timeline-img"></div>
-
-			<div class="timeline-content">
-				<h2>Title of section 2</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-				<span class="timeline-date">Jan 18</span>
-			</div> <!-- timeline-content -->
-		</div> <!-- timeline-block -->
-
-		<div class="timeline-block">
-			<div class="timeline-img"></div>
-
-			<div class="timeline-content">
-				<h2>Title of section 3</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-				<span class="timeline-date">Jan 24</span>
-			</div> <!-- timeline-content -->
-		</div> <!-- timeline-block -->
-
-		<div class="timeline-block">
-			<div class="timeline-img"></div>
-
-			<div class="timeline-content">
-				<h2>Title of section 4</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<span class="timeline-date">Feb 14</span>
-			</div> <!-- timeline-content -->
-		</div> <!-- timeline-block -->
-
-		<div class="timeline-block">
-			<div class="timeline-img"></div>
-
-			<div class="timeline-content">
-				<h2>Title of section 5</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-				<span class="timeline-date">Feb 18</span>
-			</div> <!-- timeline-content -->
-		</div> <!-- timeline-block -->
-
-		<div class="timeline-block">
-			<div class="timeline-img"></div>
-
-			<div class="timeline-content">
-				<h2>Final Section</h2>
-				<p>This is the content of the last section</p>
-				<span class="timeline-date">Feb 26</span>
-			</div> <!-- timeline-content -->
-		</div> <!-- timeline-block -->
-	</section> <!-- timeline -->
+    <!--fim timeline-->
 </body>
-    </div>
+</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/script.js" type="text/javascript"></script>
