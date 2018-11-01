@@ -71,6 +71,7 @@ button:hover {
 
 p {
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.7;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -100,7 +101,7 @@ h2 {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  background-color: #000000e0;
+  background-color: #000;
   z-index: 1;
   max-width: 100%;
   max-height: 100%;
@@ -122,11 +123,11 @@ h2 {
   margin: 0 auto;
   cursor: pointer;
   border-radius: 50%;
-  transition: all .2s ease-in-out;
+  background-color: transparent;
+  transition: all .5s ease-in-out;
 }
 
 .intro-img svg {
-  filter: invert(100%);
   height: 40px;
   width: 40px;
   position: relative;
@@ -138,7 +139,7 @@ h2 {
 }
 
 .intro-img:hover {
-  background: white;
+  background: white !important;
   border-radius: 50%;
   transition: all .2s ease-in-out;
 }
@@ -182,7 +183,6 @@ h2 {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: transparent;
   color: white;
 }
 
@@ -324,12 +324,15 @@ h2 {
 #isthisai {
   position: relative;
   overflow: hidden;
+  background-image: url('../media/stills/set-bg.png');
 }
 
 #isthisai img {
   position: absolute;
   display: block;
-  left: calc((300px - 100vw)/-2);
+  left: -10%;
+  width: 120%;
+  top: -20%;
 }
 
 #isthisai_parallax_1 {
@@ -345,6 +348,12 @@ h2 {
 #isthisai_parallax_3 {
   bottom: 0;
   z-index: 2;
+  opacity: 0.2;
+}
+
+#isthisai_parallax_4 {
+  opacity: 1;
+  z-index: 1;
 }
 
 .button-wrapper {
@@ -619,7 +628,7 @@ h2 {
     top: 6px;
     font-size: 16px;
   }
-  /*Para childs de número par (css odd/even)*/
+  /*Para childs de nÃºmero par (css odd/even)*/
   .timeline-block:nth-child(even) .timeline-content {
     float: right;
   }

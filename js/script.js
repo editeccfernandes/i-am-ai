@@ -1,9 +1,12 @@
 window.onload = function () {
 	console.log('Documento carregado');
+	$('.intro-img').css({backgroundColor:'#00ff4071'});
 	//quando o documento carregar todo, correr estes blocos de script
 	//Intro,som e fades
 	$('.intro-img').click(function () {
-		//toca áudio no click
+		$('.intro-img').css({backgroundColor:'#ffffff'});
+		$('.intro-img svg').css({filter: 'invert(100%)'})
+		//toca vídeo no click
 		$('#intro-video').trigger('play');
 		$('.intro-container').fadeOut(3000, 'swing');
 		//"deblur de cenas"
@@ -21,13 +24,15 @@ window.onload = function () {
 	//Parallax is this ai
 	$('#isthisai').mousemove(function (parallax) {
 		var window_width = $(window).width();
-		var margin1 = -(parallax.pageX - (window_width / 2)) / 2;
-		var margin2 = -(parallax.pageX - (window_width / 2)) / 5;
+		var margin1 = -(parallax.pageX - (window_width / 2)) / 30;
+		var margin2 = -(parallax.pageX - (window_width / 2)) / 20;
 		var margin3 = -(parallax.pageX - (window_width / 2)) / 10;
+		var margin4 = -(parallax.pageX - (window_width / 2)) / 5;
 
 		$('#isthisai_parallax_1').css({ 'margin-left': margin1 });
 		$('#isthisai_parallax_2').css({ 'margin-left': margin2 });
 		$('#isthisai_parallax_3').css({ 'margin-left': margin3 });
+		$('#isthisai_parallax_4').css({ 'margin-left': margin4 });
 	});
 
 
