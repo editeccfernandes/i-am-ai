@@ -4,7 +4,7 @@ window.onload = function () {
 	//Intro,som e fades
 	$('.intro-img').click(function () {
 		//toca áudio no click
-		$('#audio-intro').trigger('play');
+		$('#intro-video').trigger('play');
 		$('.intro-container').fadeOut(3000, 'swing');
 		//"deblur de cenas"
 		$('.blur').css({ "filter": "blur(0px)" });
