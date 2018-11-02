@@ -84,6 +84,16 @@ h2 {
   font-size: 40px;
 }
 
+h4 {
+  border-bottom: 2px solid rgb(18, 0, 78);
+  width: 90%;
+  margin: 15px auto;
+  font-size: 25px;
+  color: rgb(18, 0, 78);
+  text-align: center;
+  display: inline-block;
+}
+
 .blur {
   /*-webkit-filter:blur(5px);-moz-filter:blur(5px);-o-filter:blur(5px);-ms-filter:blur(5px);*/
   filter: blur(5px);
@@ -252,11 +262,12 @@ h2 {
 }
 
 .video_bg {
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: auto;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .slide-txt {
@@ -269,6 +280,7 @@ h2 {
   display: inline-block;
   width: 100vw;
   max-width: 100%;
+  overflow: visible;
   opacity: 0;
   z-index: 4;
 }
@@ -318,16 +330,16 @@ h2 {
   position: relative;
   overflow: hidden;
   background-image: url('../media/stills/set-bg.png');
-  background-position: bottom;
+  background-position: top;
   background-repeat-y: repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 #isthisai img{
   position: absolute;
   display: block;
   left: -10%;
-  /* width: 120%; */
+  width: 120%;
   top: -20%;
 }
 
@@ -356,12 +368,19 @@ h2 {
   margin: 30px;
 }
 
-.button-yes {
+.continuar {
+  width: 100vh;
+  display: block;
+  text-align: center;
+  margin: 25px auto;
+}
+
+.continuar-button {
   border: 2px solid white;
   color: white;
 }
 
-.button-yes:hover {
+.continuar-button:hover {
   background-color: white;
   color: black;
 }
@@ -369,12 +388,11 @@ h2 {
 .brief-history {
   height: max-content;
   white-space: initial;
-  background-image: url('../media/stills/set-2a-layer-inverted.png'),url('../media/stills/set-bg-1-inverted.png'), url('../media/stills/set-bg-1.png');
-  background-position: top, top, bottom;
+  background-image: url('../media/stills/set-2a-layer-inverted.png'),url('../media/stills/set-bg-1-inverted.png');
+  background-position: top center ,top center;
   background-repeat: no-repeat;
   background-color: rgba(255, 0, 255);
-  background-size: 120%, 100%, 100%;
-
+  background-size: cover, cover;
 }
 
 #brief-history {
@@ -427,7 +445,7 @@ button#subir {
 .history-nav:before {
   content: '';
   color: white;
-  height: 40vh;
+  height: calc(100vh/2.5);
   /* width: 1px; */
   display: inline-block;
   /* vertical-align: middle; */
@@ -527,6 +545,111 @@ button#subir {
   line-height: 1.6;
   font-weight: 300;
   font-size: 13px;
+}
+
+.ai-uses{
+  background-color: rgb(255, 0, 255);
+  background-image: url('../media/stills/set-4a-layer.png'),  url('../media/stills/set-2a-layer.png'), url('../media/stills/set-bg-1.png');
+  background-size: cover, cover, cover;
+  background-position: bottom, bottom, center;
+ 
+}
+
+
+
+.ai-uses-grid-container {
+  display: grid;
+  /* background-color: red; */
+  grid-template-columns: repeat(3,auto);
+  padding: 10px;
+  max-width: 1170px;
+  margin: 0 auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+
+
+.ai-uses-icon{
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all .2s ease-in-out;
+  border-radius: 50%;
+}
+
+
+.ai-uses-icon-img {
+  filter: invert(100%);
+  height: 60px;
+  padding: 10px;
+  transition: all .2s ease-in-out;
+}
+
+.ai-uses-icon:hover{
+  transition: all .2s ease-in-out;
+  background-color: white;
+}
+
+.ai-uses-icon:hover .ai-uses-icon-img{
+  transition: all .2s ease-in-out;
+  filter: invert(0%);
+}
+
+#ai-uses-modal{
+  
+width: 50vw;
+  
+height: max-content;
+  
+white-space: initial;
+  
+z-index: 5;
+  
+position: absolute;
+  
+display: block;
+  
+left: 25vw;
+  
+background: white;
+  
+border-radius: 15px;
+  
+top: 0;
+  
+display: none;
+  
+overflow: visible;
+}
+
+#ai-uses-content{
+
+}
+
+.modal-txt{
+  color:rgb(255, 0, 255);
+  padding: 10px;
+}
+#close {
+  background-color: rgb(18, 0, 78);
+  border: 0px;
+  margin: 30px;
+  margin-top: 10px;
+  border: 2px solid rgb(18, 0, 78);
+}
+
+#close:hover {
+  color: rgb(18, 0, 78);
+ background-color: white;
+}
+
+.ai-uses-grid-item {
+  width: min-content;
+  height: 65px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 @-webkit-keyframes timeline-img-show {
@@ -702,7 +825,7 @@ button#subir {
     font-weight: bold;
     font-family: 'Titillium Web', sans-serif;
   }
-  /*Para childs de nÃºmero par (css odd/even)*/
+  /*Para childs de nÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âºmero par (css odd/even)*/
   .timeline-block:nth-child(even) .timeline-content {
     float: right;
   }

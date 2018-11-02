@@ -41,6 +41,7 @@
         </div>
         </div>
     </section>
+
     <div class="slides-container">
         <section class="slide blur" id="slide">
             <div class="fullscreen_video_bg">
@@ -81,7 +82,7 @@
                     <br> Esta apresentação vai apenas explorar a parte histórica e prática.
                 </p>
                 <a href="#brief-history">
-                    <button class="button-yes">Continuar</button>
+                    <button class="continuar-button">Continuar</button>
                 </a>
                 <audio id="common-humanity" preload src="media/audio-2.mp3"></audio>
             </div>
@@ -90,19 +91,19 @@
         <section class="slide brief-history" id="brief-history">
 
             <div class="history-nav">
-                    <button id='subir'>
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-                                <g>
-                                    <path fill="#FFFFFF" rotate="90deg" d="M481.4,137.3c-6.4-6.4-16.7-6.4-23,0L256,340.1L53.2,137.3c-6.4-6.4-16.7-6.4-23,0c-6.4,6.4-6.4,16.7,0,23
+                <button id='subir'>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                        <g>
+                            <path fill="#FFFFFF" rotate="90deg" d="M481.4,137.3c-6.4-6.4-16.7-6.4-23,0L256,340.1L53.2,137.3c-6.4-6.4-16.7-6.4-23,0c-6.4,6.4-6.4,16.7,0,23
                             l213.9,213.9c3.2,3.2,7.1,4.8,11.5,4.8c4,0,8.3-1.6,11.5-4.8L481,160.3C487.8,154,487.8,143.7,481.4,137.3L481.4,137.3z"
-                                    />
-                                </g>
-                            </svg>
-                        </button>
+                            />
+                        </g>
+                    </svg>
+                </button>
                 <button id='descer'>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
                         <g>
                             <path fill="#FFFFFF" d="M481.4,137.3c-6.4-6.4-16.7-6.4-23,0L256,340.1L53.2,137.3c-6.4-6.4-16.7-6.4-23,0c-6.4,6.4-6.4,16.7,0,23
                     l213.9,213.9c3.2,3.2,7.1,4.8,11.5,4.8c4,0,8.3-1.6,11.5-4.8L481,160.3C487.8,154,487.8,143.7,481.4,137.3L481.4,137.3z"
@@ -110,7 +111,7 @@
                         </g>
                     </svg>
                 </button>
-               
+
             </div>
 
 
@@ -297,13 +298,69 @@
                     <!--fim timeline-content-->
                 </div>
                 <!--fim timeline-block-->
+
             </section>
+            <!--fim timeline-->
+            <div class="continuar">
+                <a href="#ai-uses">
+                    <button class="continuar-button">Continuar</button>
+                </a>
+                <audio id="common-humanity" preload src="media/audio-2.mp3"></audio>
+            </div>
         </section>
+        <section class="slide ai-uses" id="ai-uses">
+            <div class="slide-txt">
+                <h2>Utilizações práticas da IA</h2>
+                <p>A inteligência artifical pode se aplicada em 3 contextos diferentes:
+                </p>
+                <div class="ai-uses-grid-container">
+                    <div class="ai-uses-grid-item">
+                        <div class="ai-uses-icon">
+                            <img class="ai-uses-icon-img" src="media/dj.svg">
+                        </div>
+                        <div id="ai-uses-content" style="width: 0px; height: 0px;">
+                            <h4>Composisão Musical</h4>
+                            <p class="modal-txt">Empresas estão a usar a inteligência artificial para produzir, melhorar e complementar conteúdo
+                                músical, pode ajudar na masterização, composição e mistura do som.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ai-uses-grid-item">
+                        <div class="ai-uses-icon">
+                            <img class="ai-uses-icon-img" src="media/video-player.svg">
+                        </div>
+                        <div id="ai-uses-content" style="width: 0px; height: 0px;">
+                            <h4>Transmissão / Difusão</h4>
+                            <p class="modal-txt"> É utilizada também para recomendar música ou conteúdo personalizado baseado na atividade do utilizador.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ai-uses-grid-item">
+                        <div class="ai-uses-icon">
+                            <img class="ai-uses-icon-img" src="media/money.svg">
+                        </div>
+                        <div id="ai-uses-content" style="width: 0px; height: 0px;">
+                            <h4>Monetização</h4>
+                            <p class="modal-txt"> A inteligência artificial pode também ajudar na monetização de conteúdo e gerar lucro.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            <div id="ai-uses-modal">
+                    <div id="content">
+    
+                    </div>
+                    <button id="close">fechar</button>
+                </div>
+                <a href="#brief-history">
+                    <button class="continuar-button">Continuar</button>
+                </a>
+                <audio id="common-humanity" preload src="media/audio-2.mp3"></audio>
 
+            </div>
 
-        <!--fim timeline-->
-</body>
-</div>
+        </section>
+    </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/script.js" type="text/javascript"></script>

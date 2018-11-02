@@ -17,7 +17,7 @@ window.onload = function () {
 		$('.slide-txt').delay(3000).animate({ 'opacity': '1' }, 3000);
 	});
 
-	$('.button-yes').click(function () {
+	$('.continuar-button').click(function () {
 		$('#intro-video').animate({ volume: 0 }, 1000);
 		//$('#common-humanity').trigger('play').animate({volume: 0.3}, 1000);
 	});
@@ -67,7 +67,7 @@ window.onload = function () {
 	var timeline_block = $('.timeline-block');
 	//blocos de texto da timeline fora do viewport estão escondidos
 	timeline_block.each(function () {
-		if ($(this).offset().top > $('#brief-history').scrollTop() + $('#brief-history').height()) {
+		if ($(this).position().top > $('#brief-history').scrollTop() + $('#brief-history').height()) {
 			$(this).find('.timeline-img, .timeline-content').addClass('timeline-block-hide');
 		}
 	});
@@ -80,5 +80,18 @@ window.onload = function () {
 			}
 		});
 	});
+
+
+	$('.ai-uses-icon').click(function(){
+		var ai_content = $(this).parent()[0]
+		ai_content = ai_content.querySelector("#ai-uses-content").innerHTML;
+		console.log(ai_content);
+		$('#content').html(ai_content);
+        $('#ai-uses-modal').fadeIn();
+	})
+
+	$('#close').click(function(){
+        $('#ai-uses-modal').fadeOut();
+    });
 
 };
