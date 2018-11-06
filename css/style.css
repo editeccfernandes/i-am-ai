@@ -1002,13 +1002,17 @@ button#subir {
   pointer-events: none;
 }
 
+.slide-txt.ai-companies-txt {
+  height: max-content;
+}
+
 .ai-companies-network {
   background-image: url('../img/empresas-1.png');
   width: 800px;
   display: block;
   margin: 0 auto;
   position: relative;
-  top: calc(100vh - 90vh);
+  top: calc(100vh - 82vh);
   background-position: center;
   background-size: contain;
   height: 300px;
@@ -1050,22 +1054,25 @@ button#subir {
   /* background-color: #2683df; */
   display: none;
   position: absolute;
-  width: 500px;
+  height: 290PX;
+  width: 700PX;
   margin-top: 20px;
   text-align: center;
-  left: -230px;
+  left: -315px;
   padding: 20px;
-  top: -300px;
-  background: rgba(20, 9, 55, 0.8);
+  top: -320PX;
+  background: #181f58db;
   border-radius: 15px;
   padding: 10px;
   color: white;
+  white-space: normal;
+  z-index: 100;
 }
 
 #ai-company-1 {
   position: absolute;
-  left: 182px;
-  top: -8PX;
+  left: 475px;
+  top: 172PX;
 }
 
 #ai-company-2 {
