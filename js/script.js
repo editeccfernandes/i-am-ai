@@ -6,7 +6,7 @@ window.onload = function () {
 	//quando o documento carregar todo, correr estes blocos de script
 	//Intro,som e fades
 	$('#intro-video').prop("volume", 0.0);
-	$('#intro-audio').prop('volume', 0.0)
+	$('#intro-audio').prop('volume', 0.0);
 	$('.intro-img').on('click', function () {
 		$('.intro-img').css({
 			backgroundColor: '#ffffff'
@@ -136,10 +136,7 @@ window.onload = function () {
 		$('#history-img-7').css('top', -window_scroll_top * 0.1);
 		$('#history-img-8').css('top', -window_scroll_top * 0.5);
 	});
-	$('.ai-company, .ai-company-circle').hover(function () {
-		$('.ai-company-content', this).stop().fadeToggle(300);
-	});
-
+	
 	$('#common-humanity').prop('volume', 0.5)
 	$('#mute').on('click', function () {
 		if ($('#common-humanity').prop('volume')) {
@@ -148,4 +145,9 @@ window.onload = function () {
 			$('#common-humanity').animate({ volume: 0.5 }, 2000);
 		}
 	});
+	
+	$('.ai-company, .ai-company-circle').hover(function () {
+		$('.ai-company-content', this).stop().fadeToggle(300);
+	});
+
 };

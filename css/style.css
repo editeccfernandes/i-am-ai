@@ -994,7 +994,7 @@ button#subir {
 }
 
 .ai-companies {
-  white-space: inherit;
+  /* white-space: inherit; */
   background: rgb(12, 0, 53);
   background: -moz-linear-gradient(top, rgba(12, 0, 53, 1) 0%, rgba(5, 3, 17, 1) 100%);
   background: -webkit-linear-gradient(top, rgba(12, 0, 53, 1) 0%, rgba(5, 3, 17, 1) 100%);
@@ -1003,16 +1003,17 @@ button#subir {
 }
 
 .ai-companies-network {
-  background-image: url('../img/empresas-ai.png');
-  max-width: 700px;
+  background-image: url('../img/empresas-1.png');
+  width: 800px;
   display: block;
   margin: 0 auto;
   position: relative;
   top: calc(100vh - 90vh);
-  background-position: top;
-  background-size: cover;
-  height: 620px;
-  z-index: 97;
+  background-position: center;
+  background-size: contain;
+  height: 300px;
+  z-index: 98;
+  background-repeat: no-repeat;
 }
 
 .ai-company:before {
@@ -1027,15 +1028,15 @@ button#subir {
   /* background-color: blue; */
   height: -webkit-max-content;
   height: -moz-max-content;
-  height: max-content;
-  width: max-content;
+  /* height: max-content; */
+  /* width: max-content; */
   cursor: pointer;
 }
 
 .ai-company-circle {
   background-color: #2683df;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   display: inline-block;
   vertical-align: middle;
   pointer-events: all;
@@ -1044,17 +1045,17 @@ button#subir {
 }
 
 .ai-company-content {
-  vertical-align: middle;
-  max-width: 80%;
-  background-color: #2683df;
+  /* vertical-align: middle; */
+  /* max-width: 80%; */
+  /* background-color: #2683df; */
   display: none;
-  position: relative;
-  max-width: 600px;
+  position: absolute;
+  width: 500px;
   margin-top: 20px;
   text-align: center;
-  left: -300px;
+  left: -230px;
   padding: 20px;
-  top: -55%;
+  top: -300px;
   background: rgba(20, 9, 55, 0.8);
   border-radius: 15px;
   padding: 10px;
@@ -1063,14 +1064,50 @@ button#subir {
 
 #ai-company-1 {
   position: absolute;
-  left: 122px;
-  top: 134PX;
+  left: 182px;
+  top: -8PX;
 }
 
 #ai-company-2 {
   position: absolute;
-  left: 170px;
-  top: 310px;
+  left: 206px;
+  top: 286px;
+}
+
+#ai-company-3 {
+  position: absolute;
+  left: 16px;
+  top: 137px;
+}
+
+#ai-company-4 {
+  position: absolute;
+  left: 361px;
+  top: 145px;
+}
+
+#ai-company-5 {
+  position: absolute;
+  left: 147px;
+  top: 140PX;
+}
+
+#ai-company-6 {
+  position: absolute;
+  left: 751px;
+  top: 200px;
+}
+
+#ai-company-7 {
+  position: absolute;
+  left: 462px;
+  top: 23PX;
+}
+
+#ai-company-8 {
+  position: absolute;
+  left: 480px;
+  top: 241px;
 }
 
 .links {
