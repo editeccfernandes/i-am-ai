@@ -643,10 +643,12 @@ label img {
 	width: 900px;
 	height: 250px;
 	position: absolute;
-	display: block;
+	display: inline-block;
 	z-index: -999;
-	left: 20vw;
+	left: calc((100vw - 900px) / 2);
 	border-radius: 15px;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .button-wrapper {
